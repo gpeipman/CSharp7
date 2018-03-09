@@ -6,7 +6,8 @@ namespace CSharp7
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var sample = new TupleLiteralsSample();
+            var store = sample.GetNearestStore(0, 0);
         }
     }
 }
