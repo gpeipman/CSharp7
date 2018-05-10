@@ -1,4 +1,4 @@
-﻿namespace CSharp7
+﻿namespace CS70
 {
     public class RefSample
     {

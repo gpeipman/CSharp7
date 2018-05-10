@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
-namespace CSharp7
+namespace CS70
 {
     // BC
     public static class OutVarsSample

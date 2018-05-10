@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CSharp7
+namespace CS70
 {
     // BC
     public class ThrowExpressionsSample

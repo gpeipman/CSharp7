@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace CSharp7
+namespace CS70
 {
     // BC
     public class ExpressionBodiedMemberSample
