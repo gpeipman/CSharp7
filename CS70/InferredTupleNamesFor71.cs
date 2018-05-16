@@ -7,7 +7,7 @@
             var count = 5;
             var type = "Orange";
 
-            var tuple = (Count: count, Type: type);
+            //var tuple = (Count: count, Type: type);
         }
     }
 }
