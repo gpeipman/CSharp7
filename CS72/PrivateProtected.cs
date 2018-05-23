@@ -36,10 +36,11 @@
         public void Demo()
         {
             var x = new PrivateProtectedExample();
-            x.Dummy();
+            //x.Dummy();
         }
     }
     
+
 }
 
 
