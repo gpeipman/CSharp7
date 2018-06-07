@@ -12,20 +12,24 @@
             return default(int);
         }
 
+        // Default expressions in declarations
         public static void NewStyle()
         {
             int i = default;
             object o = default;
         }
 
+        // Default expressions in arguments
         private static int NewMethodWithArgs(int i = default, object o = default)
         {
             return default;
         }
 
+        // Generics are supported
         private static T NewMethodWithArgs<T>(int i = default, object o = default)
         {
             return default;
         }
     }
 }
+

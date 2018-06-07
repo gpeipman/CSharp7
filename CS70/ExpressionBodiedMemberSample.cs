@@ -40,16 +40,16 @@ namespace CS70
             }
         }
 
-        public class ProductNew
+        public class Product
         {
             public Guid Id { get; private set; }
             public Category Category { get; private set; }
 
             private IDictionary<DateTime, string> _nameHistory = new Dictionary<DateTime, string>();
 
-            public ProductNew(Guid id) => Id = id;
+            public Product(Guid id) => Id = id;
 
-            ~ProductNew() => Category = null;
+            ~Product() => Category = null;
 
             public string Name
             {
