@@ -4,7 +4,7 @@ namespace CS70
 {
     class SwitchPatternsSample
     {
-        public static void Show(Shape shape)
+        public static void Show1(Shape shape)
         {
             switch (shape)
             {
@@ -18,17 +18,30 @@ namespace CS70
                     Console.WriteLine($"{r.Length} x {r.Height} rectangle");
                     break;
                 default:
-                    Console.WriteLine("<unknown shape>");
+                    Console.WriteLine("unknown shape");
                     break;
                 case null:
-                    throw new ArgumentNullException(nameof(shape));
+                    Console.WriteLine("shape is null");
+                    break;
             }
         }
     }
 
     #region DemoClasses
-    public class Shape { }
-    public class Circle : Shape { public double Radius { get; set; } }
-    public class Rectangle : Shape { public double Length { get; set; } public double Height { get; set; } }
+    public class Shape
+    {
+    }
+    public class Circle : Shape
+    {
+        public double Radius { get; set; }
+    }
+    public class Rectangle : Shape
+    {
+        public double Length { get; set; }
+        public double Height { get; set; }
+    }
+    public class Octahedron : Shape
+    {
+    }
     #endregion
 }
