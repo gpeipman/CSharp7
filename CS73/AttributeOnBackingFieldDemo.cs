@@ -1,10 +1,15 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
 
 namespace CS73
 {
-    public class AttributeOnBackingFieldDemo
+    public class AttributeOnBackingFieldDemo2
     {
-        [field: Required]
-        public string Something { get; set; }
+        [field: FieldOnly]
+        public string SomeProperty { get; set; }
+    }
+
+    [AttributeUsage(AttributeTargets.Field)]
+    public class FieldOnlyAttribute : Attribute
+    {
     }
 }
